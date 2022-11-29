@@ -1,0 +1,12 @@
+---
+- name: upadte and install apt vim in playbook
+  hosts: allservers
+  tasks:
+    - name: Task1 Run the equivalent of "apt-getup date" as a separate task
+      apt:
+        update_cache: yes
+        
+    - name: Task2 Install vim text editer
+      apt:
+        name: vim
+...

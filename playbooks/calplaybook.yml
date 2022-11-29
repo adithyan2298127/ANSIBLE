@@ -1,0 +1,10 @@
+---
+- name: play for copying the cal2025
+  hosts: allservers
+  tasks:
+    - name: Copying cal2025
+      copy:
+       src: /home/student/ANSIBLE/adhoc/cal2025.txt
+       dest: /tmp
+       mode: '0777'
+...

@@ -1,0 +1,9 @@
+---
+- name: create the file and copying the text
+  hosts: allservers
+  tasks:
+   - name: Copying content to dest
+     copy:
+      dest: /etc/sudoers.d/a1pass
+      content: "student ALL=(ALL) NOPASSWD: ALL"
+...
